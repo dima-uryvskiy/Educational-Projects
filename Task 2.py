@@ -22,7 +22,6 @@ aaa b cccc CC a B
 Sample Input 1:
 aaabccccCCaB
 Sample Output 1:
-
 3ab4c2CaB
 Sample Input 2:
 a
