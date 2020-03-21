@@ -12,14 +12,4 @@ public class Reader {
         CSVReader reader = new CSVReader(new FileReader("./src/LabWork1/Lab1.csv"), ',', '"', 0);
         return reader.readAll();
     }
-
-    public static void PrintData(List<String[]> dataFile){
-        for (String[] rows: dataFile)
-        {
-            for (String  element :rows)
-                System.out.print(element + " ");
-            System.out.print("\n");
-        }
-        System.out.print("\n");
-    }
 }

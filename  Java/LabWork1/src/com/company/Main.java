@@ -26,7 +26,6 @@ public class Main {
 
         LOGGER.log(Level.INFO, "Start main and read csv file");
         List<String[]> result = Reader.ReadFile();
-        Reader.PrintData(result);
         LOGGER.log(Level.INFO, "Create array object");
         ArrayList<Lit> lit = new ArrayList<>();
         LOGGER.log(Level.INFO, "Add objects in array");

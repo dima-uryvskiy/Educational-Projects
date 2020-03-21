@@ -108,3 +108,15 @@ INFO: Serialization
 INFO: Deserialization
 мар. 21, 2020 11:52:01 PM com.company.Main main
 INFO: Print info
+мар. 21, 2020 11:58:42 PM com.company.Main main
+INFO: Start main and read csv file
+мар. 21, 2020 11:58:42 PM com.company.Main main
+INFO: Create array object
+мар. 21, 2020 11:58:42 PM com.company.Main main
+INFO: Add objects in array
+мар. 21, 2020 11:58:42 PM com.company.Main main
+INFO: Serialization
+мар. 21, 2020 11:58:42 PM com.company.Main main
+INFO: Deserialization
+мар. 21, 2020 11:58:42 PM com.company.Main main
+INFO: Print info
