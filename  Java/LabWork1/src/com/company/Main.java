@@ -28,24 +28,22 @@ public class Main {
         List<String[]> result = Reader.ReadFile();
         Reader.PrintData(result);
         LOGGER.log(Level.INFO, "Create array object");
-        ArrayList<Furniture> furniture = new ArrayList<>();
+        ArrayList<Lit> lit = new ArrayList<>();
         LOGGER.log(Level.INFO, "Add objects in array");
         for (String[] rows : result)  // заполнение массивы объектами
         {
-            if (rows[0].contains("chair"))
-                furniture.add(new Chair(rows[0], rows[1], Integer.parseInt(rows[2]), Integer.parseInt(rows[3]),
-                        Integer.parseInt(rows[4]), rows[5]));
-            if (rows[0].contains("table"))
-                furniture.add(new Table(rows[0], rows[1], Integer.parseInt(rows[2]), Integer.parseInt(rows[3]),
-                        Integer.parseInt(rows[4]), rows[5]));
+            if (rows[0].contains("book"))
+                lit.add(new Book(rows[0], rows[1],  Integer.parseInt(rows[2]), rows[3], rows[4], Integer.parseInt(rows[5])));
+            if (rows[0].contains("jour"))
+                lit.add(new Jour(rows[0], rows[1],  Integer.parseInt(rows[2]), rows[3], rows[4], Integer.parseInt(rows[5])));
         }
         LOGGER.log(Level.INFO, "Serialization");
-        Serialization.CreateFile(furniture);
+        Ser.CreateFile(lit);
         LOGGER.log(Level.INFO, "Deserialization");
-        Deserialization.CreateArray();
+        Des.CreateArray();
 
         LOGGER.log(Level.INFO, "Print info");
-        for (Furniture obj: furniture)
+        for (Lit obj: lit)
             obj.LookInfo();
     }
 }

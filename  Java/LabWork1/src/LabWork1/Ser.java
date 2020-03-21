@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-public class Serialization {
+public class Ser {
 
-    public static void CreateFile(ArrayList<Furniture> dataFile) throws IOException {
+    public static void CreateFile(ArrayList<Lit> dataFile) throws IOException {
         ObjectOutputStream oos = new ObjectOutputStream(
-                new FileOutputStream("./src/LabWork1/SerLabWork1.ser"));
+                new FileOutputStream("./src/LabWork1/Ser.ser"));
         oos.writeObject(dataFile);
         oos.flush();
     }
