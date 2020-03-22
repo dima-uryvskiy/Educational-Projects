@@ -2,9 +2,6 @@ package sample;
 
 import javafx.scene.control.TableView;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
 
 public class Controller {
 
@@ -15,17 +12,27 @@ public class Controller {
             listTable.add(objects.returnArray());
         }
 
-        Map<String, Integer> dictionary = new HashMap<String, Integer>();
-        dictionary.put("type", 0);
-        dictionary.put("name", 1);
-        dictionary.put("year", 2);
-        dictionary.put("edition", 3);
-        dictionary.put("author", 4);
-        dictionary.put("pages", 5);
+        int indexValue = 0;
+        switch (field.toLowerCase()) {
+            case "type": indexValue = 0;
+                break;
+            case "name": indexValue = 1;
+                break;
+            case "year": indexValue = 2;
+                break;
+            case "edition": indexValue = 3;
+                break;
+            case "author": indexValue = 4;
+                break;
+            case "pages": indexValue = 5;
+                break;
+            default:
+                break;
+        }
 
         for (String[] arrayValues: listTable)
         {
-            if (arrayValues[dictionary.get(field.toLowerCase())].indexOf(value) != -1)
+            if (arrayValues[indexValue].indexOf(value) != -1)
                 break;
             index++;
         }

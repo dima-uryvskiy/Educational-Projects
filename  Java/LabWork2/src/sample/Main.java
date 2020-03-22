@@ -29,7 +29,7 @@ public class Main extends Application{
         // создаем список объектов
         ObservableList<Lit> lit = FXCollections.observableArrayList(
                 new Lit("book","Histotia",1987,"AAA","Willi",555),
-                new Lit("jour","Avto",2020,"BBB","Alex",25),
+                new Lit("jour","Avto",2011,"BBB","Alex",25),
                 new Lit("jour","Myr",2020,"CCC","Sergio",80),
                 new Lit("book","Cats",2001,"DDD","MAYcAT",567)
         );
