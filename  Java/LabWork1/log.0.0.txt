@@ -120,3 +120,51 @@ INFO: Serialization
 INFO: Deserialization
 мар. 21, 2020 11:58:42 PM com.company.Main main
 INFO: Print info
+апр. 07, 2020 12:07:43 AM com.company.Main main
+INFO: Start main and read csv file
+апр. 07, 2020 12:07:43 AM com.company.Main main
+INFO: Create array object
+апр. 07, 2020 12:07:43 AM com.company.Main main
+INFO: Add objects in array
+апр. 07, 2020 12:07:43 AM com.company.Main main
+INFO: Serialization
+апр. 07, 2020 12:07:43 AM com.company.Main main
+INFO: Deserialization
+апр. 07, 2020 12:07:43 AM com.company.Main main
+INFO: Print info
+апр. 07, 2020 12:15:05 AM com.company.Main main
+INFO: Start main and read csv file
+апр. 07, 2020 12:15:05 AM com.company.Main main
+INFO: Create array object
+апр. 07, 2020 12:15:05 AM com.company.Main main
+INFO: Add objects in array
+апр. 07, 2020 12:15:05 AM com.company.Main main
+INFO: Serialization
+апр. 07, 2020 12:15:05 AM com.company.Main main
+INFO: Deserialization
+апр. 07, 2020 12:15:05 AM com.company.Main main
+INFO: Print info
+апр. 07, 2020 12:17:18 AM com.company.Main main
+INFO: Start main and read csv file
+апр. 07, 2020 12:17:19 AM com.company.Main main
+INFO: Create array object
+апр. 07, 2020 12:17:19 AM com.company.Main main
+INFO: Add objects in array
+апр. 07, 2020 12:17:19 AM com.company.Main main
+INFO: Serialization
+апр. 07, 2020 12:17:19 AM com.company.Main main
+INFO: Deserialization
+апр. 07, 2020 12:17:19 AM com.company.Main main
+INFO: Print info
+апр. 07, 2020 12:21:12 AM com.company.Main main
+INFO: Start main and read csv file
+апр. 07, 2020 12:21:12 AM com.company.Main main
+INFO: Create array object
+апр. 07, 2020 12:21:12 AM com.company.Main main
+INFO: Add objects in array
+апр. 07, 2020 12:21:12 AM com.company.Main main
+INFO: Serialization
+апр. 07, 2020 12:21:12 AM com.company.Main main
+INFO: Deserialization
+апр. 07, 2020 12:21:12 AM com.company.Main main
+INFO: Print info

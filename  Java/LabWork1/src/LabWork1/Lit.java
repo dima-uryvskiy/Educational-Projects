@@ -21,11 +21,5 @@ public abstract class Lit implements Serializable
         this.pages = pages;
     }
 
-    public void LookInfo()
-    {
-        System.out.println("Main Info:");
-        System.out.printf("Type: %s\nName: %s\nYear: %d\nEdition: %s\nAuthor: %s\nPages: %d\n",
-                type, name, year, edition, author, pages);
-        System.out.print("\n");
-    }
+    public void LookInfo(){}
 }

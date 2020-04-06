@@ -7,10 +7,10 @@ import java.util.List;
 
 public class Des {
 
-    public static List<String[]> CreateArray() throws IOException, ClassNotFoundException {
+    public static ArrayList<Lit> CreateArray() throws IOException, ClassNotFoundException {
         ObjectInputStream ois = new ObjectInputStream(
                 new FileInputStream("./src/LabWork1/Ser.ser"));
-        ArrayList<String[]> newResult = (ArrayList<String[]>)ois.readObject();
+        ArrayList<Lit> newResult = (ArrayList<Lit>)ois.readObject();
         return newResult;
     }
 }
