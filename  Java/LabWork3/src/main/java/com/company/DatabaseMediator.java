@@ -129,4 +129,49 @@ public class DatabaseMediator
             System.out.println("Update if " + tableName + " is failed");
         }
     }
+
+
+    public void  AddInTableRow()
+    {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Input product type: ");
+        String type = scanner.nextLine();
+
+        System.out.print("Input product name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Input product year: ");
+        int year = scanner.nextInt();
+
+        System.out.print("Input product pages: ");
+        int pages = scanner.nextInt();
+
+        System.out.print("Input product edition: ");
+        String edition = scanner.nextLine();
+
+        System.out.print("Input product author: ");
+        String author = scanner.nextLine();
+        
+        System.out.print("\n");
+
+        try {
+            String sql = "INSERT INTO lit (type, name, year, edition, author, pages) Values (?, ?, ?, ?, ?, ?)";
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, type);
+            preparedStatement.setString(2, name);
+            preparedStatement.setInt(3, year);
+            preparedStatement.setString(4, edition);
+            preparedStatement.setString(5, author);
+            preparedStatement.setInt(6, pages);
+            int rows = preparedStatement.executeUpdate();
+
+            System.out.printf("%d rows added", rows);
+            connection.commit();
+            preparedStatement.close();
+        }
+        catch(Exception ex) {
+            System.out.println("Connection failed...");
+        }
+    }
 }

@@ -28,6 +28,8 @@ public class Main
                         dataForDatabase.get(i).getValue0(),
                         dataForDatabase.get(i).getValue1());
             }
+
+            databaseMediator.AddInTableRow();
             databaseMediator.Disconnect();
         }
     }
