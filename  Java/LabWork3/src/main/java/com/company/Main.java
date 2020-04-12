@@ -20,7 +20,7 @@ public class Main
             dataForDatabase.add(DatabaseDataPreparer.PrepearData(lit));
         }
         DatabaseMediator databaseMediator = new DatabaseMediator();
-        if (databaseMediator.Connect("postgresql", "laba3", "admin", "12345"))
+        if (databaseMediator.Connect("postgresql", "laba3", "postgres", "12345"))
         {
             for (int i = 0; i < allLits.size(); i++)
             {
