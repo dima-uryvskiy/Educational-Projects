@@ -7,7 +7,7 @@ class ExampleTest extends PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->calculator = new Example;
+        $this->calculator = new ExampleTest();
     }
 
     protected function tearDown()
