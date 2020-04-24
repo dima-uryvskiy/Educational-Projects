@@ -6,15 +6,17 @@ class ExampleTest extends TestCase
 {
     private $calculator;
 
-    protected function setUp()
+    /**
+     * Create new object Example
+     *
+     * @return void
+     */
+    protected function setUp(): void
     {
-        $this->calculator = new ExampleTest();
+        $this->calculator = new Example();
     }
 
-    protected function tearDown()
-    {
-        $this->calculator = NULL;
-    }
+
 
     public function testAdd()
     {
