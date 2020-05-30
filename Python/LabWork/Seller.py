@@ -1,9 +1,9 @@
 class Seller:
 
-    def __init__(self, fio, pasport, product):
+    def __init__(self, fio, passport, product):
         self.fio = fio
-        self.pasport = pasport
+        self.passport = passport
         self.product = product
 
     def __str__(self):
-        return "Main info for Seller: {0} {1} {2}".format(self.fio, self.pasport, self.product)
+        return f"\nMain info for Seller: FIO: {self.fio} Passport: {self.passport} {self.product}"
