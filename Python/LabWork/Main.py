@@ -4,6 +4,7 @@ from Seller import *
 from Auction import *
 
 
+# TODO: тут будет цикл (получить все предметы из файла и насоздавать объектов)
 product = Product(2, "Test", "kek", 100, 200)
 
 customer = Customer("Alex Test Testivch", "60 1934", product)
