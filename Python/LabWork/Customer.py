@@ -6,4 +6,4 @@ class Customer:
         self.product = product
 
     def __str__(self):
-        return f"\nMain info for Customer: FIO: {self.fio} Passport: {self.passport} {self.product}"
+        return f"Main info for Customer: FIO: {self.fio} Passport: {self.passport} {self.product}"

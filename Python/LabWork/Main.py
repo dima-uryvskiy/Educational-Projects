@@ -1,7 +1,3 @@
-from Product import *
-from Customer import *
-from Seller import *
-from Auction import *
 from Reader import *
 
 
@@ -10,13 +6,63 @@ def find_max_different_price(auctions):
     product = ''
 
     for auction in auctions:
-        price = auction.sellers.product.end_price - auction.sellers.product.start_price
-
+        for seller in auction.sellers:
+            price = int(seller.product.end_price) - int(seller.product.start_price)
         if max_different < price:
             max_different = price
-            product = auction.sellers.product
+            product = seller.product
 
+    print('Разница:', max_different)
     return product
+
+
+def find_max_price_customer(auctions):
+    max_different = 0
+    max_customer = ''
+
+    for auction in auctions:
+        for customer in auction.customers:
+            price = int(customer.product.end_price)
+        if max_different < price:
+            max_different = price
+            max_customer = customer
+
+    print('Цена', max_different)
+    return max_customer
+
+
+def find_max_price_seller(auctions):
+    max_different = 0
+    max_seller = ''
+
+    for auction in auctions:
+        for seller in auction.sellers:
+            price = int(seller.product.end_price) - int(seller.product.start_price)
+        if max_different < price:
+            max_different = price
+            max_seller = seller
+
+    print('Цена', max_different)
+    return max_seller
+
+
+def find_count_product(auctions):
+    max_count = 0
+    count = 0
+    max_auction = None
+
+    for auction in auctions:
+        for seller in auction.sellers:
+            if seller.product.name != '':
+                count += 1
+                max_auction = auction
+
+            if max_count < count:
+                max_count = count
+        count = 0
+
+    print('Число предметов:', max_count)
+    return max_auction
 
 
 with open('data.txt', 'r') as file:
@@ -26,22 +72,29 @@ reader = Reader()
 auctions = reader.read_file(file_input)
 name_auction = 'Yarmarka'
 date_auction = '22.05.2020'
-option_product = 'Image1'
+option_product = 'Image'
 
 for auction in auctions:
-    #  Какие предметы на заданную дату и на заданном аукционе выставлены на продажу.
     if auction.name == name_auction and auction.date == date_auction:
+        print('\nКакие предметы на заданную дату и на заданном аукционе выставлены на продажу.')
         auction.look_info()
 
-    #  На каком аукционе продавались предметы заданной специфики.
     for seller in auction.sellers:
         if seller.product.option == option_product:
+            print('На каком аукционе продавались предметы заданной специфики.')
             auction.look_info()
 
-# TODO: написать метод для красивого вывода
+print('Предмет, имеющий максимальную разницу между начальной и конечной ценами.')
+print(find_max_different_price(auctions))
 
-#  Предмет, имеющий максимальную разницу между начальной и конечной ценами.
-#print('\nМаксимальная  между начальной и конечной ценами:\n', find_max_different_price(auctions))
+print('На каком аукционе было продано больше всего предметов.')
+find_count_product(auctions).look_info()
 
-#  На каком аукционе было продано больше всего предметов.
-#print('\nАукцион:')
+print('Покупатель самого дорогого лота.')
+print(find_max_price_customer(auctions))
+
+
+print('Продавец самого дорогого лота')
+print(find_max_price_seller(auctions))
+
+
