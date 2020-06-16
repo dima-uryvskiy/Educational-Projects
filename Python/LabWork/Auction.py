@@ -8,11 +8,16 @@ class Auction:
         self.customers = customers
         self.sellers = sellers
 
-    def __str__(self):
-        return f"\nMain info for Auction: " \
-               f"\nName: {self.name} " \
-               f"\nPlace: {self.place}" \
-               f"\nDate: {self.date} " \
-               f"\n№ Lot: {self.lot_number} " \
-               f"\nCustomers: {self.customers} " \
-               f"\nSellers: {self.sellers}"
+    def look_info(self):
+        print(
+            f"\nMain info for Auction: "
+            f"\nName: {self.name} "
+            f"\nPlace: {self.place}"
+            f"\nDate: {self.date} "
+            f"\n№ Lot: {self.lot_number} ")
+
+        for customer in self.customers:
+            print(customer)
+
+        for seller in self.sellers:
+            print(seller)
