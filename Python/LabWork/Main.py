@@ -97,10 +97,13 @@ print('Продавец самого дорогого лота')
 print(find_max_price_seller(auctions))
 
 
-print('Добавим предмет для первого ацкциона')
-
+print('\nДобавим предмет для первого ацкциона')
 product = Product(777, 'Test', 'House', 1000, 2000)
 
 auctions[0].add_product(Seller('Ivan1 Ivanivich2 Ivnov3', '77 7600', product), Customer('Alex6 Test5 Testivch4', '60 1122', product))
-
 auctions[0].look_info()
+
+print('\nУдалим предмет для второго ацкциона')
+auctions[1].delete_product(7)
+auctions[1].look_info()
+

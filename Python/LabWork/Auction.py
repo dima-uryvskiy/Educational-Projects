@@ -10,11 +10,11 @@ class Auction:
 
     def look_info(self):
         print(
-            f"\nMain info for Auction: "
-            f"\nName: {self.name} "
-            f"\nPlace: {self.place}"
-            f"\nDate: {self.date} "
-            f"\n№ Lot: {self.lot_number} ")
+            f"\nОсновная информация: "
+            f"\nНазвание: {self.name} "
+            f"\nМесто: {self.place}"
+            f"\nДата: {self.date} "
+            f"\nАукцион №: {self.lot_number} ")
 
         for customer in self.customers:
             print(customer)
@@ -25,3 +25,12 @@ class Auction:
     def add_product(self, seller, customer):
         self.sellers.append(seller)
         self.customers.append(customer)
+
+    def delete_product(self, id_lot):
+        for index, customer in enumerate(self.customers):
+            if int(customer.product.lot_number) == id_lot:
+                del self.customers[index]
+
+        for index, seller in enumerate(self.sellers):
+            if int(seller.product.lot_number) == id_lot:
+                del self.sellers[index]
