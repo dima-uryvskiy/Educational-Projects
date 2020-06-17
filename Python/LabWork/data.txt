@@ -1,26 +1,26 @@
 product, 1, Test, Image, 100, 200
 customer, Alex Test Testivch, 60 1977
 seller, Ivan Ivanivich Ivno, 60 1934
-product, 1, Test1, Music, 100, 300
+product, 2, Test1, Music, 100, 300
 customer, Test Test Test, 60 1966
 seller, Andrew Chyb Kirovich, 60 1937
-product, 1, Test2, Food, 100, 400
+product, 3, Test2, Food, 100, 400
 customer, Kron Mron Test, 60 1999
 seller, Artem Artem Artemovich, 60 8888
 auction, Yarmarka, Moscow, 22.05.2020, 1
 
 
 
-product, 2, Test4, Image1, 100, 200
+product, 4, Test4, Image1, 100, 200
 customer, Alex1 Test1 Testivch1, 60 6666
 seller, Ivan1 Ivanivich Ivno, 60 1221
-product, 2, Test5, Music1, 100, 300
+product, 5, Test5, Music1, 100, 300
 customer, Test2 Test2 Test2, 60 3443
 seller, Andrew1 Chyb Kirovich, 60 7890
-product, 2, Test6, Food1, 100, 400
+product, 6, Test6, Food1, 100, 400
 customer, Kron3 Mron3 Test3, 60 2334
 seller, Artem1 Artem Artemovich, 60 8838
-product, 2, Test7, Chair, 100, 300
+product, 7, Test7, Chair, 100, 300
 customer, Test7 Test7 Test7, 60 3999
 seller, Vera Deni Licio, 60 7000
 auction, Market, Rostow, 22.05.2021, 2

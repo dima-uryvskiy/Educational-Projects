@@ -37,7 +37,7 @@ def find_max_price_seller(auctions):
 
     for auction in auctions:
         for seller in auction.sellers:
-            price = int(seller.product.end_price) - int(seller.product.start_price)
+            price = int(seller.product.end_price)
         if max_different < price:
             max_different = price
             max_seller = seller
@@ -93,8 +93,14 @@ find_count_product(auctions).look_info()
 print('Покупатель самого дорогого лота.')
 print(find_max_price_customer(auctions))
 
-
 print('Продавец самого дорогого лота')
 print(find_max_price_seller(auctions))
 
 
+print('Добавим предмет для первого ацкциона')
+
+product = Product(777, 'Test', 'House', 1000, 2000)
+
+auctions[0].add_product(Seller('Ivan1 Ivanivich2 Ivnov3', '77 7600', product), Customer('Alex6 Test5 Testivch4', '60 1122', product))
+
+auctions[0].look_info()

@@ -21,3 +21,7 @@ class Auction:
 
         for seller in self.sellers:
             print(seller)
+
+    def add_product(self, seller, customer):
+        self.sellers.append(seller)
+        self.customers.append(customer)
