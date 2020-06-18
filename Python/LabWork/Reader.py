@@ -5,16 +5,22 @@ from Auction import *
 
 
 class Reader:
-
+    """
+        Метод после считывания информации с файла заполняет списки нунжыми объектами
+    """
     def read_file(self, file_input):
 
+        #  Разделяем данные с файла по ,
         data_file = [string.replace(' ', '').split(',') for string in file_input]
 
         product = None
         customers = list()
         sellers = list()
         auctions = list()
-
+        """
+             Проверем какого типа данные, создаем нужные и заполняем списки, тк у одного аукциона
+             может быть неограниченное число продавцов и товаров
+        """
         for data in data_file:
             for value in data:
                 if value == 'product':
@@ -29,7 +35,6 @@ class Reader:
                     customers = list()
                 else:
                     continue
-
 
         return auctions
 
