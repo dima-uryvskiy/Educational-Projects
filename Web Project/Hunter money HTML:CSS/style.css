@@ -1,143 +1,193 @@
 @keyframes money-fly-1 {
   0% {
     left: -55px;
-    top: 61vh;
+    top: 69vh;
   }
   50% {
-    left: 70%;
-    top: 75vh;
+    left: 50%;
+    top: 68vh;
   }
   100% {
     left: 105%;
-    top: 18vh;
+    top: 44vh;
   }
 }
 @keyframes money-fly-2 {
   0% {
     left: -55px;
-    top: 44vh;
+    top: 21vh;
   }
   50% {
-    left: 70%;
-    top: 33vh;
+    left: 50%;
+    top: 8vh;
   }
   100% {
     left: 105%;
-    top: 53vh;
+    top: 71vh;
   }
 }
 @keyframes money-fly-3 {
   0% {
     left: -55px;
-    top: 45vh;
+    top: 13vh;
   }
   50% {
-    left: 70%;
-    top: 6vh;
+    left: 50%;
+    top: 12vh;
   }
   100% {
     left: 105%;
-    top: 29vh;
+    top: 26vh;
   }
 }
 @keyframes money-fly-4 {
   0% {
     left: -55px;
-    top: 45vh;
+    top: 64vh;
   }
   50% {
-    left: 70%;
-    top: 44vh;
+    left: 50%;
+    top: 13vh;
   }
   100% {
     left: 105%;
-    top: 35vh;
+    top: 70vh;
   }
 }
 @keyframes money-fly-5 {
   0% {
     left: -55px;
-    top: 39vh;
+    top: 69vh;
   }
   50% {
-    left: 70%;
-    top: 45vh;
+    left: 50%;
+    top: 75vh;
   }
   100% {
     left: 105%;
-    top: 46vh;
+    top: 26vh;
   }
 }
 @keyframes money-fly-6 {
   0% {
     left: -55px;
-    top: 24vh;
+    top: 30vh;
   }
   50% {
-    left: 70%;
-    top: 61vh;
+    left: 50%;
+    top: 70vh;
   }
   100% {
     left: 105%;
-    top: 25vh;
+    top: 39vh;
   }
 }
 @keyframes money-fly-7 {
   0% {
     left: -55px;
-    top: 33vh;
+    top: 22vh;
   }
   50% {
-    left: 70%;
-    top: 28vh;
+    left: 50%;
+    top: 56vh;
   }
   100% {
     left: 105%;
-    top: 17vh;
+    top: 40vh;
   }
 }
 @keyframes money-fly-8 {
   0% {
     left: -55px;
-    top: 54vh;
+    top: 29vh;
   }
   50% {
-    left: 70%;
-    top: 60vh;
+    left: 50%;
+    top: 41vh;
   }
   100% {
     left: 105%;
-    top: 8vh;
+    top: 31vh;
   }
 }
 @keyframes money-fly-9 {
   0% {
     left: -55px;
-    top: 73vh;
+    top: 49vh;
   }
   50% {
-    left: 70%;
-    top: 50vh;
+    left: 50%;
+    top: 30vh;
   }
   100% {
     left: 105%;
-    top: 20vh;
+    top: 67vh;
   }
 }
 @keyframes money-fly-10 {
   0% {
     left: -55px;
-    top: 24vh;
+    top: 71vh;
   }
   50% {
-    left: 70%;
-    top: 53vh;
+    left: 50%;
+    top: 54vh;
   }
   100% {
     left: 105%;
-    top: 56vh;
+    top: 52vh;
   }
 }
+.money-1 {
+  position: absolute;
+  animation: money-fly-1 3s linear 1s 1 both;
+}
+
+.money-2 {
+  position: absolute;
+  animation: money-fly-2 5s linear 2s 1 both;
+}
+
+.money-3 {
+  position: absolute;
+  animation: money-fly-3 3s linear 3s 1 both;
+}
+
+.money-4 {
+  position: absolute;
+  animation: money-fly-4 5s linear 4s 1 both;
+}
+
+.money-5 {
+  position: absolute;
+  animation: money-fly-5 4s linear 5s 1 both;
+}
+
+.money-6 {
+  position: absolute;
+  animation: money-fly-6 4s linear 6s 1 both;
+}
+
+.money-7 {
+  position: absolute;
+  animation: money-fly-7 5s linear 7s 1 both;
+}
+
+.money-8 {
+  position: absolute;
+  animation: money-fly-8 4s linear 8s 1 both;
+}
+
+.money-9 {
+  position: absolute;
+  animation: money-fly-9 3s linear 9s 1 both;
+}
+
+.money-10 {
+  position: absolute;
+  animation: money-fly-10 5s linear 10s 1 both;
+}
+
 body {
   background-image: url(https://i.ytimg.com/vi/i9R8MqilMW8/maxresdefault.jpg);
   background-position: center;
@@ -172,56 +222,6 @@ h1 {
   position: absolute;
   top: 0px;
   right: 32px;
-}
-
-.money-1 {
-  position: absolute;
-  animation: money-fly-1 4s linear 1s 1 both;
-}
-
-.money-2 {
-  position: absolute;
-  animation: money-fly-2 4s linear 2s 1 both;
-}
-
-.money-3 {
-  position: absolute;
-  animation: money-fly-3 4s linear 3s 1 both;
-}
-
-.money-4 {
-  position: absolute;
-  animation: money-fly-4 4s linear 4s 1 both;
-}
-
-.money-5 {
-  position: absolute;
-  animation: money-fly-5 4s linear 5s 1 both;
-}
-
-.money-6 {
-  position: absolute;
-  animation: money-fly-6 4s linear 6s 1 both;
-}
-
-.money-7 {
-  position: absolute;
-  animation: money-fly-7 4s linear 7s 1 both;
-}
-
-.money-8 {
-  position: absolute;
-  animation: money-fly-8 4s linear 8s 1 both;
-}
-
-.money-9 {
-  position: absolute;
-  animation: money-fly-9 4s linear 9s 1 both;
-}
-
-.money-10 {
-  position: absolute;
-  animation: money-fly-10 4s linear 10s 1 both;
 }
 
 /*# sourceMappingURL=style.css.map */

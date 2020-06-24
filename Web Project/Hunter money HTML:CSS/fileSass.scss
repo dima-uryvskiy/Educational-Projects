@@ -1,4 +1,4 @@
-//
+// animattion
 
 @for $i from 1 through 10 {
   @keyframes money-fly-#{$i} {
@@ -8,7 +8,7 @@
     }
 
     50% {
-      left: 70%;
+      left: 50%;
       top: random(75) + vh;
     }
 
@@ -16,6 +16,14 @@
       left: 105%;
       top: random(75) + vh;
     }
+  }
+}
+
+// motion move
+@for $i from 1 through 10 {
+  .money-#{$i} {
+    position: absolute;
+    animation: money-fly-#{$i} random(3) + 2 + s linear #{$i}s 1 both;
   }
 }
 
@@ -40,7 +48,6 @@ input[type="checkbox"]:checked + img {
 input[type="checkbox"] {
   position: absolute;
   visibility: hidden;
-  //left: -9999px;
 }
 
 h1::after {
@@ -55,11 +62,4 @@ h1 {
   position: absolute;
   top: 0px;
   right: 32px;
-}
-
-@for $i from 1 through 10 {
-  .money-#{$i} {
-    position: absolute;
-    animation: money-fly-#{$i} 4s linear #{$i}s 1 both;
-  }
 }
