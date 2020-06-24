@@ -1,5 +1,17 @@
 body {
   background-image: url(https://i.ytimg.com/vi/i9R8MqilMW8/maxresdefault.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  counter-reset: count;
+}
+
+input[type=checkbox]:checked {
+  counter-increment: count;
+}
+
+h1::after {
+  content: counter(count);
 }
 
 /*# sourceMappingURL=style.css.map */
