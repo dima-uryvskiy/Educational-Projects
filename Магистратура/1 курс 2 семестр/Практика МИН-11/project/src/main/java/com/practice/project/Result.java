@@ -4,18 +4,15 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "test")
-public class Test
+@Table(name = "result")
+public class Result
 {
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    @Column(name = "id_test")
+    @Column(name = "id_result")
     private Long id;
 
-    @Column (name = "quastion")
-    private String quastion;
-
-    @Column (name = "answer")
-    private String answer;
+    @Column (name = "resultTest")
+    private Integer resultTest;
 }
