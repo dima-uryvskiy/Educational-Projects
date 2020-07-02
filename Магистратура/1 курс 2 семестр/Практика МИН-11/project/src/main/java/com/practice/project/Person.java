@@ -20,8 +20,15 @@ public class Person
     private String surname;
 
     @Column (name = "age")
-    private String age;
+    private Integer age;
 
     @Column (name = "company")
     private String company;
+
+    public Person(String name, String surname, Integer age, String company) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.company = company;
+    }
 }

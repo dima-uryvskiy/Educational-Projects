@@ -18,4 +18,9 @@ public class Test
 
     @Column (name = "answer")
     private String answer;
+
+    public Test(String quastion, String answer) {
+        this.quastion = quastion;
+        this.answer = answer;
+    }
 }

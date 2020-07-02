@@ -24,4 +24,11 @@ public class Company
 
     @Column (name = "vat")
     private String vat;
+
+    public Company(String name, String city, String address, String vat) {
+        this.name = name;
+        this.city = city;
+        this.address = address;
+        this.vat = vat;
+    }
 }

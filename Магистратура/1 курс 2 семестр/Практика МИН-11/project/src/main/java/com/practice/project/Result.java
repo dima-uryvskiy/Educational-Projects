@@ -15,4 +15,9 @@ public class Result
 
     @Column (name = "resultTest")
     private Integer resultTest;
+
+    public Result(Integer resultTest) {
+        this.resultTest = resultTest;
+    }
 }
+

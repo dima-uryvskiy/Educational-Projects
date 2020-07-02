@@ -1,4 +1,4 @@
-package com.practice.project;
+package com.practice.project.DB;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
