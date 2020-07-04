@@ -7,4 +7,4 @@ class Customer:
         self.max_price = max_price
 
     def __str__(self):
-        return f"Покупатель: ФИО: {self.fio} Координаты: {self.address} {self.car}, максимальная цена: {self.max_price}"
+        return f'ФИО: {self.fio}\nКоординаты: {self.address}\nМаксимальная цена: {self.max_price}\n{self.car}'

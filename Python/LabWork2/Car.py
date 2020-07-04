@@ -11,12 +11,12 @@ class Car:
         self.price = price
 
     def __str__(self):
-        return f"Авто: " \
-               f"Фирма: {self.firm} " \
-               f"Модель: {self.model} " \
-               f"Год выпуска: {self.year} " \
-               f"Мощность двигателя: {self.power_engine}" \
-               f"Коробка: {self.transmission} " \
-               f"Состояние: {self.state} " \
-               f"Особенности: {self.special} " \
-               f"Цена: {self.price}"
+        return f'Авто: ' \
+               f'Фирма: {self.firm} \n' \
+               f'Модель: {self.model} \n' \
+               f'Год выпуска: {self.year} \n' \
+               f'Мощность двигателя: {self.power_engine} \n' \
+               f'Коробка: {self.transmission} \n' \
+               f'Состояние: {self.state} \n' \
+               f'Особенности: {self.special} \n' \
+               f'Цена: {self.price}'

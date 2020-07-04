@@ -5,4 +5,4 @@ class Shop:
         self.car = car
 
     def __str__(self):
-        return f"Магазин: {self.fio, self.car}"
+        return f'Магазин: {self.fio}\n {self.car}'

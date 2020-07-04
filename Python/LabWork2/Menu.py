@@ -4,7 +4,7 @@ from Shop import *
 
 
 def read_file(file_input):
-    return [string.replace(' ', '').split(',') for string in file_input]
+    return [string.replace(' ', '').rstrip('\n').split(',') for string in file_input]
 
 
 cars = list()
@@ -32,6 +32,46 @@ with open('shop.txt', 'r') as file:
         car_index += 1
 
 
+special = 'turbo'
+print('\nПокупатель на автомобиль с заданными параметрами.\n')
+
+for customer in customers:
+    if special == customer.car.special:
+        print(customer)
+
+model = 'X2'
+print('\nПокупатель желающие приобрести автомобиль заданной модели.\n')
+
+for customer in customers:
+    if model == customer.car.model:
+        print(customer)
+
+print('\nСписок автомобилей с пробегом меньше 30 тыс. км.\n')
+
+for car in cars:
+    if int(car.state) < 30000:
+        print(car)
+
+print('\nСписок новых автомобилей.\n')
+
+for car in cars:
+    if int(car.state) == 0:
+        print(car)
 
 
+print('\nПокупатели имеющие необоходимую сумму для покупки автомобиля.\n')
 
+for customer in customers:
+    if int(customer.max_price) >= int(customer.car.price):
+        print(customer, '\n')
+
+print('\nСамый дорогой автомобиль.\n')
+max = int(cars[0].price)
+
+for car in cars:
+    if int(car.price) > max:
+        max = int(car.price)
+
+for car in cars:
+    if int(car.price) == max:
+        print(car)
