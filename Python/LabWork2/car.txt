@@ -1,3 +1,3 @@
-Lada, X1, 1990, 100, hand, bad, music, 1500$
-Ford, X2, 2000, 200, auto, normal, gas, 2500$
-BMW, X5, 2010, 500, auto, good, turbo, 5500$
+Lada, X1, 1990, 100, hand, 1100000, music, 1500$
+Ford, X2, 2000, 200, auto, 31000, gas, 2500$
+BMW, X5, 2020, 500, auto, 0, turbo, 15500$

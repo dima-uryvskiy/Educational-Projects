@@ -21,7 +21,7 @@ with open('customer.txt', 'r') as file:
     file_input = file.readlines()
     car_index = 0
     for data in read_file(file_input):
-        customers.append(Customer(data[0], data[1],  cars[car_index]))
+        customers.append(Customer(data[0], data[1],  cars[car_index], data[2]))
         car_index += 1
 
 with open('shop.txt', 'r') as file:
