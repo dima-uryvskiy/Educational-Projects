@@ -75,3 +75,10 @@ for car in cars:
 for car in cars:
     if int(car.price) == max:
         print(car)
+
+
+customers.append(Customer('Test', 'London', Car('test', 'test', 2010, 100, 'test', 40000, 'test', 100000), '1500'))
+print('\nДобавлен новый клиент:\n', customers[3])
+
+del customers[3]
+print('\nКлиент удален, количество клиентов на данный момент:\n', len(customers))

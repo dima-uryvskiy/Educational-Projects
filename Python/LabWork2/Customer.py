@@ -8,3 +8,4 @@ class Customer:
 
     def __str__(self):
         return f'ФИО: {self.fio}\nКоординаты: {self.address}\nМаксимальная цена: {self.max_price}\n{self.car}'
+
