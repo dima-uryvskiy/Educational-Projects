@@ -1,5 +1,9 @@
 package com.practice.project;
 
+import com.practice.project.Entity.Company;
+import com.practice.project.Entity.Person;
+import com.practice.project.Entity.Result;
+import com.practice.project.Entity.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.practice.project.DB.ObjectDAO;

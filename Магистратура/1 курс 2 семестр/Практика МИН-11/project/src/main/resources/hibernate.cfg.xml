@@ -14,10 +14,10 @@
         <property name="show_sql">true</property>
 
 
-        <mapping class="com.practice.project.Test"/>
-        <mapping class="com.practice.project.Result"/>
-        <mapping class="com.practice.project.Person"/>
-        <mapping class="com.practice.project.Company"/>
+        <mapping class="com.practice.project.Entity.Test"/>
+        <mapping class="com.practice.project.Entity.Result"/>
+        <mapping class="com.practice.project.Entity.Person"/>
+        <mapping class="com.practice.project.Entity.Company"/>
 
 
     </session-factory>
