@@ -3,12 +3,18 @@ package com.practice.project;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.practice.project.DB.ObjectDAO;
+import sun.misc.Unsafe;
+
+import java.lang.reflect.Field;
 
 
 @SpringBootApplication
 public class ProjectApplication {
 
 	public static void main(String[] args) {
+		// TODO: Заглушка для WARNING: An illegal reflective access operation has occurred
+		disableWarning();
+
 		SpringApplication.run(ProjectApplication.class, args);
 		ObjectDAO dao = new ObjectDAO();
 
@@ -21,5 +27,17 @@ public class ProjectApplication {
 		dao.addValue(person);
 		dao.addValue(test);
 		dao.addValue(result);
+	}
+
+	public static void disableWarning() {
+		try {
+			Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe"); theUnsafe.setAccessible(true);
+			Unsafe u = (Unsafe) theUnsafe.get(null);
+			Class cls = Class.forName("jdk.internal.module.IllegalAccessLogger");
+			Field logger = cls.getDeclaredField("logger");
+			u.putObjectVolatile(cls, u.staticFieldOffset(logger), null);
+		} catch (Exception e) {
+
+		}
 	}
 }
