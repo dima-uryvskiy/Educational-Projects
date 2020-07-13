@@ -1,4 +1,4 @@
-package com.practice.project.Entity;
+package com.practice.project.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
