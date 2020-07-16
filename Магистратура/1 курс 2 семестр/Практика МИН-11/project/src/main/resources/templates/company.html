@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Companies List</title>
+</head>
+<body>
+<h1>Company List</h1>
+<a href="addCompany">Add company</a>
+<br/><br/>
+<div>
+    <table border="1">
+        <tr th:each ="company : ${companies}">
+            <td th:utext="${company}">...</td>
+            <td th:utext="${company}">...</td>
+        </tr>
+    </table>
+    <a href="/person">Person</a> <br/><br/>
+    <a href="/test">Test</a> <br/><br/>
+    <a href="/result">Result</a>  <br/><br/>
+</div>
+</body>
+</html>

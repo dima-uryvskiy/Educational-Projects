@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Result List</title>
+</head>
+<body>
+<h1>Result List</h1>
+<a href="addResult">Add result</a>
+<br/><br/>
+<div>
+    <table border="1">
+        <tr th:each ="result : ${results}">
+            <td th:utext="${result}">...</td>
+            <td th:utext="${result}">...</td>
+        </tr>
+    </table>
+    <a href="/person">Person</a> <br/><br/>
+    <a href="/test">Test</a> <br/><br/>
+    <a href="/company">Company</a> <br/><br/>
+</div>
+</body>
+</html>
