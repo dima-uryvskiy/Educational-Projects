@@ -36,12 +36,39 @@ public class ProjectController {
     }
 
     @ModelAttribute
-    @RequestMapping(value = { "/personList" }, method = RequestMethod.GET)
-    public String personList(Model model) {
+    @RequestMapping(value = { "/person" }, method = RequestMethod.GET)
+    public String person(Model model) {
 
         model.addAttribute("persons", persons);
 
-        return "personList";
+        return "person";
+    }
+
+    @ModelAttribute
+    @RequestMapping(value = { "/company" }, method = RequestMethod.GET)
+    public String company(Model model) {
+
+        model.addAttribute("companies", persons);
+
+        return "company";
+    }
+
+    @ModelAttribute
+    @RequestMapping(value = { "/test" }, method = RequestMethod.GET)
+    public String test(Model model) {
+
+        model.addAttribute("tests", persons);
+
+        return "test";
+    }
+
+    @ModelAttribute
+    @RequestMapping(value = { "/result" }, method = RequestMethod.GET)
+    public String personList(Model model) {
+
+        model.addAttribute("results", persons);
+
+        return "result";
     }
 
 //    @RequestMapping(value = { "/addPerson" }, method = RequestMethod.GET)
