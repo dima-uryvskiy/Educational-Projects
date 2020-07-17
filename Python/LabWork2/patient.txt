@@ -1,0 +1,3 @@
+Ivanov-Ivan-Ivanovich, Moscow, m, 60, 777, 23.05.2020, headache, tablet
+Miskina-Olga-Andreevna, Krasnodar, w, 50, 888, 23.06.2020, cough, ORVI
+Ked-Dmitriy-Olegovich, Rostow-on-Don, m, 30, 999, 27.05.2020, appendicitis, operation

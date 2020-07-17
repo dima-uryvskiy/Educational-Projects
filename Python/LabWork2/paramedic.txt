@@ -1,0 +1,3 @@
+Ivanov-Sergey-Ivanovich, top, 25, doctor1, 50, 08:00, 315, weekdays
+Kernel-Irina-Victorovna, top, 10, 39, medsister, 09:00, 211, weekdays
+Linux-Windows-Ivanovich, top, 32, 65, doctor3, 07:45, 170, weekdays
