@@ -11,14 +11,19 @@
 <div>
     <table border="1">
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Company</th>
         </tr>
-        <tr th:each ="person : ${persons}">
-            <td th:utext="${person}">...</td>
-            <td th:utext="${person}">...</td>
+        <tr th:each ="person:${Persons}">
+            <td th:text="${person.name}">...</td>
+            <td th:text="${person.surname}">...</td>
+            <td th:text="${person.age}">...</td>
+            <td th:text="${person.company}">...</td>
         </tr>
     </table>
+    <br/><br/>
     <a href="/company">Company</a> <br/><br/>
     <a href="/test">Test</a> <br/><br/>
     <a href="/result">Result</a> <br/><br/>

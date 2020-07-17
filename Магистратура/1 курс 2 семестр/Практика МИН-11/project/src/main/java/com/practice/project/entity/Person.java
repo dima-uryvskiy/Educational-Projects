@@ -11,19 +11,19 @@ public class Person
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
     @Column(name = "id_person")
-    private Long id;
+    public Long id;
 
     @Column (name = "name")
-    private String name;
+    public String name;
 
     @Column (name = "surname")
-    private String surname;
+    public String surname;
 
     @Column (name = "age")
-    private Integer age;
+    public Integer age;
 
     @Column (name = "company")
-    private String company;
+    public String company;
 
     public Person(String name, String surname, Integer age, String company) {
         this.name = name;

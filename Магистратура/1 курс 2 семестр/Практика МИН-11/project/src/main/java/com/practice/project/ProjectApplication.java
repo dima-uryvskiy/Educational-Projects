@@ -19,10 +19,9 @@ public class ProjectApplication {
 		disableWarning();
 
 		SpringApplication.run(ProjectApplication.class, args);
-		ObjectDAO dao = new ObjectDAO();
-
-		//TODO: Чет отвалилась база
-//		Company company = new Company("Moon", "Rostow", "Большая садовая 50", "77889911");
+//		ObjectDAO dao = new ObjectDAO();
+//
+//		Company company = new Company("Moon", "Rostow", "Большая садовая 50");
 //		Person person = new Person("Dima", "Uryvskiy", 23, "Moon");
 //		Test test = new Test("2+2", "4");
 //		Result result = new Result(100);

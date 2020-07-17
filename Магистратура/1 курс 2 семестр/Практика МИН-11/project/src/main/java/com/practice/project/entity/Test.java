@@ -11,13 +11,13 @@ public class Test
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
     @Column(name = "id_test")
-    private Long id;
+    public Long id;
 
     @Column (name = "quastion")
-    private String quastion;
+    public String quastion;
 
     @Column (name = "answer")
-    private String answer;
+    public String answer;
 
     public Test(String quastion, String answer) {
         this.quastion = quastion;

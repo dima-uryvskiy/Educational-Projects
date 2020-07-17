@@ -11,10 +11,10 @@ public class Result
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
     @Column(name = "id_result")
-    private Long id;
+    public Long id;
 
     @Column (name = "resultTest")
-    private Integer resultTest;
+    public Integer resultTest;
 
     public Result(Integer resultTest) {
         this.resultTest = resultTest;

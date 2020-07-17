@@ -11,24 +11,20 @@ public class Company
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
     @Column(name = "id_company")
-    private Long id;
+    public Long id;
 
     @Column (name = "name")
-    private String name;
+    public String name;
 
     @Column (name = "city")
-    private String city;
+    public String city;
 
     @Column (name = "address")
-    private String address;
+    public String address;
 
-    @Column (name = "vat")
-    private String vat;
-
-    public Company(String name, String city, String address, String vat) {
+    public Company(String name, String city, String address) {
         this.name = name;
         this.city = city;
         this.address = address;
-        this.vat = vat;
     }
 }
