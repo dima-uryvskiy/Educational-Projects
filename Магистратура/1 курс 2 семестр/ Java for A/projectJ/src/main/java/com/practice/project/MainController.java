@@ -13,10 +13,10 @@ import java.util.List;
 @Controller
 public class MainController {
 
-    private static List<Client> clients = new ArrayList<Client>();
-    private static List<Tour> tours = new ArrayList<Tour>();
-    private static List<Employee> employees = new ArrayList<Employee>();
-    private static List<Request> requests = new ArrayList<Request>();
+    private static List<Customer> customers = new ArrayList<Customer>();
+    private static List<Product> products = new ArrayList<Product>();
+    private static List<Manager> managers = new ArrayList<Manager>();
+    private static List<Stock> stocks = new ArrayList<Stock>();
 
     @Value("${message}")
     private String message;
@@ -24,55 +24,55 @@ public class MainController {
     @RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
     public String index(Model model) {
 
-        message = "Добрый день, это стартовая страница сайта поддержки военно-исторического туризма. Выберите нужный раздел.";
+        message = "Выберите интересующий вас раздел:";
         model.addAttribute("message", message);
 
         return "index";
     }
 
     @ModelAttribute
-    @RequestMapping(value = { "/client" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/customer" }, method = RequestMethod.GET)
     public String person(Model model) {
 
-        clients.add(new Client("Рудин Александр Игоревич", "igor@rambler.ru", "+79185554433"));
+        customers.add(new Customer("Рудин Александр Игоревич", "igor@rambler.ru", "+79185554433"));
 
-        model.addAttribute("Clients", clients);
+        model.addAttribute("Customers", customers);
 
-        return "client";
+        return "customer";
     }
 
     @ModelAttribute
-    @RequestMapping(value = { "/tour" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/product" }, method = RequestMethod.GET)
     public String company(Model model) {
 
-        tours.add(new Tour("Золотая звезда", "1000 руб.", "25.07.2020", "26.07.2020"));
-        tours.add(new Tour("Красна звезда", "1500 руб.", "23.07.2020", "24.07.2020"));
-        tours.add(new Tour("Белая звезда", "2000 руб.", "26.07.2020", "29.07.2020"));
+        products.add(new Product("Золотая звезда", "1000 руб.", "25.07.2020"));
+        products.add(new Product("Красна звезда", "1500 руб.", "23.07.2020"));
+        products.add(new Product("Белая звезда", "2000 руб.", "26.07.2020"));
 
-        model.addAttribute("Tours", tours);
+        model.addAttribute("Products", products);
 
-        return "tour";
+        return "product";
     }
 
     @ModelAttribute
-    @RequestMapping(value = { "/employee" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/manager" }, method = RequestMethod.GET)
     public String test(Model model) {
 
-        employees.add(new Employee("Кержаков Александр Витальевич", "менеджер","+79184566690"));
+        managers.add(new Manager("Кержаков Александр Витальевич", "менеджер","+79184566690"));
 
-        model.addAttribute("Employees", employees);
+        model.addAttribute("Managers", managers);
 
-        return "employee";
+        return "manager";
     }
 
     @ModelAttribute
-    @RequestMapping(value = { "/request" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/stock" }, method = RequestMethod.GET)
     public String personList(Model model) {
 
-        requests.add(new Request(1,1,1, "24.07.2020"));
+        stocks.add(new Stock(1,1,1, "24.07.2020"));
 
-        model.addAttribute("Requests", requests);
+        model.addAttribute("Stocks", stocks);
 
-        return "request";
+        return "stock";
     }
 }

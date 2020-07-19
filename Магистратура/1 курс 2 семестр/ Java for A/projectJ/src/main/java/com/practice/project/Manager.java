@@ -4,13 +4,13 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "employee")
-public class Employee
+@Table(name = "manager")
+public class Manager
 {
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    @Column(name = "id_employee")
+    @Column(name = "id_manager")
     public Long id;
 
     @Column (name = "fio")
@@ -19,12 +19,12 @@ public class Employee
     @Column (name = "position")
     public String position;
 
-    @Column (name = "contact")
-    public String contact;
+    @Column (name = "phone")
+    public String phone;
 
-    public Employee(String fio, String position, String contact) {
+    public Manager(String fio, String position, String phone) {
         this.fio = fio;
         this.position = position;
-        this.contact = contact;
+        this.phone = phone;
     }
 }

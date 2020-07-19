@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            margin-left: 17%;
+        }
+    </style>
+    <title>Менеджеры</title>
+</head>
+<body>
+<h1 align="center">Список менеджеров</h1>
+<div>
+    <table border="1", align="center">
+        <tr>
+            <th>ФИО</th>
+            <th>Должность</th>
+            <th>Телефон</th>
+        </tr>
+        <tr th:each ="manager : ${Managers}">
+            <td th:utext="${manager.fio}">...</td>
+            <td th:utext="${manager.position}">...</td>
+            <td th:utext="${manager.phone}">...</td>
+        </tr>
+    </table>
+
+    <ul class="flex-row">
+        <p><b>Покупатели -
+            <a href="/customer"><img src="https://pngimage.net/wp-content/uploads/2018/06/клиент-иконка-png-2.png" width="100" height="100" border="" hspace="15"></a>
+        </b>
+        </p>
+
+        <p><b>Менеджеры -
+            <a href="/manager"><img src="https://image.flaticon.com/icons/png/512/115/115893.png" width="100" height="100" border="0" hspace="15"></a>
+        </b>
+        </p>
+
+        <p><b>Товары -
+            <a href="/product"><img src="https://image.flaticon.com/icons/png/512/36/36656.png" width="100" height="100" border="0" hspace="15"></a>
+        </b>
+        </p>
+
+        <p><b>Склады -
+            <a href="/stock"><img src="https://image.flaticon.com/icons/png/512/18/18404.png" width="100" height="100" border="0" hspace="15"></a>
+        </b>
+        </p>
+    </ul>
+
+</div>
+</body>
+</html>
