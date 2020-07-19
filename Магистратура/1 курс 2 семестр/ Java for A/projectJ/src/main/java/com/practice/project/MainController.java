@@ -34,7 +34,10 @@ public class MainController {
     @RequestMapping(value = { "/customer" }, method = RequestMethod.GET)
     public String person(Model model) {
 
-        customers.add(new Customer("Рудин Александр Игоревич", "igor@rambler.ru", "+79185554433"));
+        customers.add(new Customer("Сергеев Касьян Валерьевич", "test1@example.com", "+7(909)961-64-96"));
+        customers.add(new Customer("Беляев Вальтер Серапионович", "test2@example.com", "+7(158)021-77-18"));
+        customers.add(new Customer("Савельев Варлам Даниилович", "test3@example.com", "+7(904)132-66-25"));
+        customers.add(new Customer("Красильников Тимофей Даниилович", "test4@example.com", "+7(979)551-06-37"));
 
         model.addAttribute("Customers", customers);
 
@@ -45,9 +48,9 @@ public class MainController {
     @RequestMapping(value = { "/product" }, method = RequestMethod.GET)
     public String company(Model model) {
 
-        products.add(new Product("Золотая звезда", "1000 руб.", "25.07.2020"));
-        products.add(new Product("Красна звезда", "1500 руб.", "23.07.2020"));
-        products.add(new Product("Белая звезда", "2000 руб.", "26.07.2020"));
+        products.add(new Product("Набор ключей", "3000 руб.", "777"));
+        products.add(new Product("Стелаж 'Пустыня'", "13000 руб.", "888"));
+        products.add(new Product("Стелаж 'Лес'", "25000 руб.", "999"));
 
         model.addAttribute("Products", products);
 
@@ -58,7 +61,8 @@ public class MainController {
     @RequestMapping(value = { "/manager" }, method = RequestMethod.GET)
     public String test(Model model) {
 
-        managers.add(new Manager("Кержаков Александр Витальевич", "менеджер","+79184566690"));
+        managers.add(new Manager("Герасимов Ефим Владленович", "менеджер","+7(979)551-06-99"));
+        managers.add(new Manager("Владимирова Радослава Якововна", "старший менеджер","+7(979)551-06-77"));
 
         model.addAttribute("Managers", managers);
 
@@ -69,7 +73,7 @@ public class MainController {
     @RequestMapping(value = { "/stock" }, method = RequestMethod.GET)
     public String personList(Model model) {
 
-        stocks.add(new Stock(1,1,1, "24.07.2020"));
+        stocks.add(new Stock(1,1,1, "Ростов-на-Дону ул. Зорге д. 77"));
 
         model.addAttribute("Stocks", stocks);
 
