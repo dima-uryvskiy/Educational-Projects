@@ -1,0 +1,8 @@
+com/practice/project/entity/Test.class
+com/practice/project/entity/Person.class
+com/practice/project/DB/ObjectDAO.class
+com/practice/project/controller/ProjectController.class
+com/practice/project/DB/HibernateUtil.class
+com/practice/project/entity/Result.class
+com/practice/project/ProjectApplication.class
+com/practice/project/entity/Company.class
