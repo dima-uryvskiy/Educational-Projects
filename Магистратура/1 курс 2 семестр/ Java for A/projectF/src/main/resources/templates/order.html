@@ -13,23 +13,21 @@
             background-color: #aaff6d; /* Цвет фона */
         }
     </style>
-    <title>Магазины</title>
+    <title>Заказы</title>
 </head>
 <body>
-<h1 align="center">Список магазинов</h1>
+<h1 align="center">Список заказов</h1>
 <div>
     <table border="1", align="center">
         <tr>
-            <th>Код клиента</th>
-            <th>Код Заказа</th>
-            <th>Код продукта</th>
-            <th>Сайт</th>
+            <th>Номер заказа</th>
+            <th>Цена</th>
+            <th>Адресс получателя</th>
         </tr>
-        <tr th:each ="shop : ${Shops}">
-            <td th:utext="${shop.id_client}">...</td>
-            <td th:utext="${shop.id_order}">...</td>
-            <td th:utext="${shop.id_product}">...</td>
-            <td th:utext="${shop.url}">...</td>
+        <tr th:each ="order : ${Orders}">
+            <td th:utext="${order.number}">...</td>
+            <td th:utext="${order.price}">...</td>
+            <td th:utext="${order.address}">...</td>
         </tr>
     </table>
 
@@ -49,6 +47,7 @@
     <p align="center">
         <a href="/shop" th:width="60">Магазины</a>
     </p>
+
 </div>
 </body>
 </html>

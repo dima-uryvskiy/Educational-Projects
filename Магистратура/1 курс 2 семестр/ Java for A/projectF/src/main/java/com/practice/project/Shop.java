@@ -19,18 +19,18 @@ public class Shop
     @Column (name = "id_product")
     public Integer id_product;
 
-    @Column (name = "id_manager")
-    public Integer id_manager;
+    @Column (name = "id_order")
+    public Integer id_order;
 
-    @Column (name = "address")
-    public String address;
+    @Column (name = "url")
+    public String url;
 
-    public Shop(Integer id_client, Integer id_product, Integer id_manager, String address)
+    public Shop(Integer id_client, Integer id_product, Integer id_order, String url)
     {
         this.id_client = id_client;
         this.id_product = id_product;
-        this.id_manager = id_manager;
-        this.address = address;
+        this.id_order = id_order;
+        this.url = url;
     }
 }
 

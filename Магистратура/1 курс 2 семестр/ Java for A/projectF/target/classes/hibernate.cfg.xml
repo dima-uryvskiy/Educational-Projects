@@ -14,9 +14,9 @@
         <property name="show_sql">true</property>
 
 
-        <mapping class="com.practice.project.Manager"/>
-        <mapping class="com.practice.project.Stock"/>
-        <mapping class="com.practice.project.Customer"/>
+        <mapping class="com.practice.project.Order"/>
+        <mapping class="com.practice.project.Shop"/>
+        <mapping class="com.practice.project.Client"/>
         <mapping class="com.practice.project.Product"/>
 
 

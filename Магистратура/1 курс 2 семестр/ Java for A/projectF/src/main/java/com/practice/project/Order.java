@@ -4,27 +4,27 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "product")
-public class Product
+@Table(name = "manager")
+public class Order
 {
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    @Column(name = "id_product")
+    @Column(name = "id_manager")
     public Long id;
 
-    @Column (name = "name")
-    public String name;
+    @Column (name = "number")
+    public String number;
 
     @Column (name = "price")
     public String price;
 
-    @Column (name = "size")
-    public String size;
+    @Column (name = "address")
+    public String address;
 
-    public Product(String name, String price, String size) {
-        this.name = name;
+    public Order(String number, String price, String address) {
+        this.number = number;
         this.price = price;
-        this.size = size;
+        this.address = address;
     }
 }
