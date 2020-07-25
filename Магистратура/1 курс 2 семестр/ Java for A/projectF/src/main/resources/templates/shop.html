@@ -13,21 +13,23 @@
             background-color: #c7b39b; /* Цвет фона */
         }
     </style>
-    <title>Покупатели</title>
+    <title>Склады</title>
 </head>
 <body>
-<h1 align="center">Список покупателей</h1>
+<h1 align="center">Список складов</h1>
 <div>
-    <table border="2", align="center">
+    <table border="1", align="center">
         <tr>
-            <th>ФИО</th>
-            <th>E-mail</th>
-            <th>Номер телефона</th>
+            <th>Код клиента</th>
+            <th>Код менеджера</th>
+            <th>Код продукта</th>
+            <th>Адрес склада</th>
         </tr>
-        <tr th:each ="customer : ${Customers}">
-            <td th:text="${customer.fio}">...</td>
-            <td th:text="${customer.email}">...</td>
-            <td th:text="${customer.phone}">...</td>
+        <tr th:each ="shop : ${Shops}">
+            <td th:utext="${shop.id_client}">...</td>
+            <td th:utext="${shop.id_manager}">...</td>
+            <td th:utext="${shop.id_product}">...</td>
+            <td th:utext="${shop.address}">...</td>
         </tr>
     </table>
 

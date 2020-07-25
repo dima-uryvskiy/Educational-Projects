@@ -13,10 +13,10 @@ import java.util.List;
 @Controller
 public class MainController {
 
-    private static List<Customer> customers = new ArrayList<Customer>();
+    private static List<Client> clients = new ArrayList<Client>();
     private static List<Product> products = new ArrayList<Product>();
     private static List<Manager> managers = new ArrayList<Manager>();
-    private static List<Stock> stocks = new ArrayList<Stock>();
+    private static List<Shop> shops = new ArrayList<Shop>();
 
     @Value("${message}")
     private String message;
@@ -31,17 +31,17 @@ public class MainController {
     }
 
     @ModelAttribute
-    @RequestMapping(value = { "/customer" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/client" }, method = RequestMethod.GET)
     public String person(Model model) {
 
-        customers.add(new Customer("Сергеев Касьян Валерьевич", "test1@example.com", "+7(909)961-64-96"));
-        customers.add(new Customer("Беляев Вальтер Серапионович", "test2@example.com", "+7(158)021-77-18"));
-        customers.add(new Customer("Савельев Варлам Даниилович", "test3@example.com", "+7(904)132-66-25"));
-        customers.add(new Customer("Красильников Тимофей Даниилович", "test4@example.com", "+7(979)551-06-37"));
+        clients.add(new Client("Суханов Пантелеймон Авдеевич", "sykhanov@rambler.ru", "+7(918)726-0072"));
+        clients.add(new Client("Денисов Мартын Степанович", "denisov@rambler.ru", "+7(917)644-6218"));
+        clients.add(new Client("Туров Август Натанович", "tyrov@rambler.ru", "+7(916)166-5773"));
+        clients.add(new Client("Денисов Арсен Кириллович", "denisov4@rambler.ru", "+7(915)467-7168"));
 
-        model.addAttribute("Customers", customers);
+        model.addAttribute("Clients", clients);
 
-        return "customer";
+        return "client";
     }
 
     @ModelAttribute
@@ -70,13 +70,13 @@ public class MainController {
     }
 
     @ModelAttribute
-    @RequestMapping(value = { "/stock" }, method = RequestMethod.GET)
+    @RequestMapping(value = { "/shop" }, method = RequestMethod.GET)
     public String personList(Model model) {
 
-        stocks.add(new Stock(1,1,1, "Ростов-на-Дону ул. Зорге д. 77"));
+        shops.add(new Shop(1,1,1, "Ростов-на-Дону ул. Зорге д. 77"));
 
-        model.addAttribute("Stocks", stocks);
+        model.addAttribute("Shops", shops);
 
-        return "stock";
+        return "shop";
     }
 }

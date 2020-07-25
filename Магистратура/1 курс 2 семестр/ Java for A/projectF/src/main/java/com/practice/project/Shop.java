@@ -4,13 +4,13 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "stock")
-public class Stock
+@Table(name = "shop")
+public class Shop
 {
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    @Column(name = "id_stock")
+    @Column(name = "id_shop")
     public Long id;
 
     @Column (name = "id_client")
@@ -25,7 +25,7 @@ public class Stock
     @Column (name = "address")
     public String address;
 
-    public Stock(Integer id_client, Integer id_product, Integer id_manager, String address)
+    public Shop(Integer id_client, Integer id_product, Integer id_manager, String address)
     {
         this.id_client = id_client;
         this.id_product = id_product;
