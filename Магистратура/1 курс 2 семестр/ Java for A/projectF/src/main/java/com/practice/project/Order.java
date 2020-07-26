@@ -4,13 +4,13 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "manager")
+@Table(name = "order")
 public class Order
 {
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    @Column(name = "id_manager")
+    @Column(name = "id_order")
     public Long id;
 
     @Column (name = "number")

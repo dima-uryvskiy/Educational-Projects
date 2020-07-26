@@ -13,6 +13,19 @@ public class Shop
     @Column(name = "id_shop")
     public Long id;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "client")
+    private Client client;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "order")
+    private Order order;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "product")
+    private Product product;
+
+
     @Column (name = "id_client")
     public Integer id_client;
 
