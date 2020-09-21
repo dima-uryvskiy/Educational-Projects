@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Shop>
+  <Elements-Price>
+    <product>
+      <name>Product1</name>
+      <unit>piece</unit>
+      <price>50</price>
+      <quantity>5</quantity>
+    </product>
+    <product>
+      <name>Product4</name>
+      <unit>piece</unit>
+      <price>50</price>
+      <quantity>5</quantity>
+    </product>
+  </Elements-Price>
+  <Elements-Quantity>
+    <product>
+      <name>Product2</name>
+      <unit>piece</unit>
+      <price>20</price>
+      <quantity>2</quantity>
+    </product>
+    <product>
+      <name>Product5</name>
+      <unit>piece</unit>
+      <price>40</price>
+      <quantity>2</quantity>
+    </product>
+    <product>
+      <name>Product7</name>
+      <unit>piece</unit>
+      <price>67</price>
+      <quantity>1</quantity>
+    </product>
+    <product>
+      <name>Product10</name>
+      <unit>piece</unit>
+      <price>59</price>
+      <quantity>1</quantity>
+    </product>
+  </Elements-Quantity>
+</Shop>
