@@ -87,7 +87,7 @@ public class Main {
             if (Integer.parseInt(eElement.getElementsByTagName("quantity").item(0).getTextContent()) <= 2) {
                 CreateXml(eElement, newDocument, elementsQuantity, root);
 
-            } else if (Integer.parseInt(eElement.getElementsByTagName("price").item(0).getTextContent()) == inputPrice) {
+            } else if (Integer.parseInt(eElement.getElementsByTagName("price").item(0).getTextContent()) > inputPrice) {
                 CreateXml(eElement, newDocument, elementsPrice, root);
             }
         }

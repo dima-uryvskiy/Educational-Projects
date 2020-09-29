@@ -8,10 +8,28 @@
       <quantity>5</quantity>
     </product>
     <product>
+      <name>Product3</name>
+      <unit>piece</unit>
+      <price>30</price>
+      <quantity>3</quantity>
+    </product>
+    <product>
       <name>Product4</name>
       <unit>piece</unit>
       <price>50</price>
       <quantity>5</quantity>
+    </product>
+    <product>
+      <name>Product6</name>
+      <unit>piece</unit>
+      <price>55</price>
+      <quantity>3</quantity>
+    </product>
+    <product>
+      <name>Product9</name>
+      <unit>piece</unit>
+      <price>33</price>
+      <quantity>4</quantity>
     </product>
   </Elements-Price>
   <Elements-Quantity>
